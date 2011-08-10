@@ -1,0 +1,249 @@
+@CHARSET "UTF-8";
+/*
+ * Project:     Lollapaloobox
+ * Description: Video Chat with live-stream of Lollapalooza
+ * Website:     http://lolla.opentok.com
+ * 
+ * Author:      Ezra Velazquez
+ * Website:     http://ezraezraezra.com
+ * Date:        June 2011
+ * 
+ */
+@font-face {
+	font-family: Folksolid-webfont; src: url('../assets/Folksolid-webfont.ttf');
+}
+body {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #EDEDA9;
+	text-align: center;
+	font-family: Folksolid-webfont;
+}
+#base_top {
+	position: absolute;
+	margin-top: /*584px;*/ 466px;
+	margin-left: 355px;
+	width: 300px;
+	height: 50px;
+	background-color: #bf9727;
+}	
+#base_body {
+	position: absolute;
+	margin-top: /*600px;*/ 482px;
+	margin-left: 380px;
+	width: 225px;
+	height: 100px;
+	background-color: #bf9727;
+	overflow: auto;
+	padding:10px;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.circle_map {
+	width: 124px;
+	height: 124px;
+	background: #58AD19;
+	-moz-border-radius: 62px;
+	-webkit-border-radius: 62px;
+	line-height: 100px;
+	cursor: pointer;
+	font-size: 24px;
+}
+.circle_map_cover {
+	width: 124px;
+	height: 124px;
+	background-color: transparent;
+	line-height: 100px;
+	cursor: pointer;
+	font-size: 24px;
+}
+.circle_map:hover {
+	background: yellow;
+}
+#map_container {
+	width: 1000px;
+	height: 618px;
+	background-color: transparent;
+	opacity: 1;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+#map_stage_22867{
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 438px;
+}
+#map_stage_22866 {
+	position: absolute;
+	margin-top: /*440px;*/ 322px;
+	margin-left: 438px;
+}
+#map_stage_22863 {
+	position: absolute;
+	margin-top: /*280px;*/ 162px;
+	margin-left: 276px;
+}
+#map_stage_22869 {
+	position: absolute;
+	margin-top: /*280px;*/ 162px;
+	margin-left: 600px;
+}
+#map_stage_22870 {
+	position: absolute;
+	margin-top: /*159px;*/ 41px;
+	margin-left: 319px;
+}
+#map_stage_22868 {
+	position: absolute;
+	margin-top: /*159px;*/ 41px;
+	margin-left: 558px;
+}
+#map_stage_22864 {
+	position: absolute;
+	margin-top: /*400px;*/ 282px; 
+	margin-left: 559px;
+}
+#map_stage_22862 {
+	position: absolute;
+	margin-top: /*400px;*/ 282px;
+	margin-left: 316px;
+}
+#map_stage_c22867{
+	position: absolute;
+	margin-top: /*118px;*/ 0px;
+	margin-left: 438px;
+	z-index: 10;
+}
+#map_stage_c22866 {
+	position: absolute;
+	margin-top: /*440px;*/ 322px;
+	margin-left: 438px;
+}
+#map_stage_c22863 {
+	position: absolute;
+	margin-top: /*280px;*/ 162px;
+	margin-left: 276px;
+}
+#map_stage_c22869 {
+	position: absolute;
+	margin-top: /*280px;*/ 162px;
+	margin-left: 600px;
+}
+#map_stage_c22870 {
+	position: absolute;
+	margin-top: /*159px;*/ 41px;
+	margin-left: 319px;
+}
+#map_stage_c22868 {
+	position: absolute;
+	margin-top: /*159px;*/ 41px;
+	margin-left: 558px;
+}
+#map_stage_c22864 {
+	position: absolute;
+	margin-top: /*400px;*/ 282px;
+	margin-left: 559px;
+}
+#map_stage_c22862 {
+	position: absolute;
+	margin-top: /*400px;*/ 282px;
+	margin-left: 316px;
+}
+#map_stage_9 {
+	position: absolute;
+	margin-top: /*220px;*/ 102px;
+	margin-left: 375px;
+	width: 250px;
+	height: 250px;
+	background: yellow;
+	-moz-border-radius: 125px;
+	-webkit-border-radius: 125px;
+	cursor: pointer;
+	font-size: 20px;
+}
+#map_stage_9_name {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	font-size: 24px;
+	text-align: center;
+}
+#map_stage_9_image {
+	text-align: center;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	font-size: 36px;
+}
+#map_container_proper {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+#more_info {
+	font-size: 12px;
+	color: blue;
+	cursor:pointer;
+}
+#more_info:hover {
+	color:green;
+	-moz-transition: color 0.5s;
+	-webkit-transition: color 0.5s;*/
+}
+#more_info_div {
+	display:none;
+}
+#more_info_info {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	position:relative;
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+	height: 80%;
+	overflow: auto;
+	white-space: normal;
+}
+#more_info_close {
+	position:absolute;
+	border-radius:35px;
+	-moz-border-radius:35px;
+	width: 30px;
+	height: 30px;
+	margin-left: 75%;
+	background-color:yellow;
+	margin-top: 25%;
+	display: none;
+	z-index:8001;
+	cursor:pointer;
+	font-size: 27px;
+}
+#more_info_name {
+	position: absolute;
+	margin-left: 25%;
+	margin-right: auto;
+	width: 50%;
+	height: 25%;
+	background-color: #58AD19;
+	margin-top: 25%;
+	display:none;
+	z-index:8000;
+	border-radius:25px;
+	-moz-border-radius:25px;
+	padding:10px;
+	border:2px solid yellow;
+	font-size: 24px;
+}
+#stem {
+	position: absolute;
+	margin-top: /*453px;*/ 335px;
+	margin-left: 398px;
+	width: 100px;
+	height: 200px;
+	background-image: url('../assets/stem.png');
+}

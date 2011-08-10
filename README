@@ -1,0 +1,19 @@
+/**********************************************************************
+ * Developer:   Ezra Velazquez http://ezraezraezra.com
+ * Company:     TokBox         http://www.tokbox.com
+ * 
+ * Date:        June 2011
+ *
+ * Title:       Lollapaloobox  http://lolla.opentok.com
+ * Description: Virtual mosh experience with video chat by OpenTok and
+ *              artist info by HackLolla
+ *
+ * Tech:        AJAX, CSS, CSS3, HackLolla API, HTML, JavaScript,
+ *              JSON, jQuery, OpenTok API, PHP 
+ * Last Update: August 10th, 2011
+ ***********************************************************************/
+ 
+ NOTE: *** 3rd PARTY LIBRARIES HAVE BEEN OMITTED FROM THE PUBLIC REPO ***
+ 
+ Libraries Omitted:  OpenTok     http://www.tokbox.com
+                     jQuery      http://jquery.com
