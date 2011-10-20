@@ -36,14 +36,12 @@
 <script type="text/javascript">
 	var id_map = 0;
 	var twitter_link_text = "http://twitter.com/share?original_referer=http%3A%2F%2Flocalhost%2FTokBox%2Fconcert%2Findex_2.html&source=tweetbutton&text=BLAH%20title%20here&url=http%3A%2F%2Flocalhost%2FTokBox%2Fconcert%2Findex_2.html";
-</script> 
-</head>
-
+</script>
+<script type="text/javascript">
 <?php
 if ($_GET[stage] == 'y') {
 	echo <<<_END
 	
-<script type="text/javascript">
 	$(document).ready(function() {
 		$("#map_container").fadeOut('fast', function() {
 		
@@ -56,23 +54,21 @@ if ($_GET[stage] == 'y') {
 			participate($_GET[just_watch], $_GET[user_type], $_GET[stage_num]);
 		});		
 	});
-</script>
 
 _END;
 }
 else {
 echo <<<_END
-
-<script type="text/javascript">
 	$(document).ready(function() {
 		$.getScript("js/map.js");
 		$.getScript("js/stage.js");
 	});
-</script>
 _END;
 }
 
 ?>
+</script> 
+</head>
 <body OnUnload="remove_user()">
 	
 	<div id="more_info_name">

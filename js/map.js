@@ -42,7 +42,7 @@ $(".circle_map_cover").mouseover(function() {
 		$("#map_stage_" + id_map_prev).css("background-color", "#58AD19");
 	}
 	id_map = $(this).attr("id").substring(11);
-	$("#map_stage_9_name").html(stage_info[$(this).attr("id").substring(11)].name);
+	$("#map_stage_9_name").html(stage_info[$(this).attr("id").substring(11)].name); 
 	$("#map_stage_9_image").html("<img src='"+stage_info[$(this).attr("id").substring(11)].image + "' height='90' width='90' />");
 	$("#map_stage_"+id_map).css("background-color", "yellow");
 	
@@ -97,9 +97,9 @@ function load_json(file_name){
 			minute = time_string[1];
 			currentTime = new Date();
 			
-			if (currentTime.getFullYear() - 2000 == 11) {
+//			if (currentTime.getFullYear() - 2000 == 11) {
 				// Show hasn't started yet
-				if ((currentTime.getMonth() < 8) || (currentTime.getMonth() == 8 && currentTime.getDate < 5)) {
+//				if ((currentTime.getMonth() < 8) || (currentTime.getMonth() == 8 && currentTime.getDate < 5)) {
 					//Get Data from first show
 					if (typeof(data.venue.events.event[x].bands) != "undefined") {
 						stage_info[file_name_original] = new data_object(data.venue.events.event[0].photo_thumb, data.venue.events.event[0].title, data.venue.events.event[0].bands.band.homepage, data.venue.events.event[0].bands.band.description);
@@ -109,32 +109,32 @@ function load_json(file_name){
 					}
 					
 					break_loop = true;
-				}
-				// Show has started, but not ended
-				else 
-					if (currentTime.getMonth() == 8 && currentTime.getDate >= 5 && currentTime.getDate <= 7) {
-					
-						// Friday-Sunday
-						if (currentTime.getDate == 5 || currentTime.getDay == 6 || currentTime.getDay == 0) {
-							if ((currentTime.getHours() < hour) || (currentTime.getHours() == hour && currentTime.getMinutes <= minute)) {
-								if (typeof(data.venue.events.event[x].bands) != "undefined") {
-									stage_info[file_name_original] = new data_object(data.venue.events.event[x].photo_thumb, data.venue.events.event[x].title, data.venue.events.event[x].bands.band.homepage, data.venue.events.event[x].bands.band.description);
-								}
-								else {
-									stage_info[file_name_original] = new data_object(data.venue.events.event[x].photo_thumb, data.venue.events.event[x].title, "#", "No information currently available");
-								}
-								break_loop = true;
-							}
-						}
-					}
-					
-					// Show has ended
-					else {
-						// SHOW HAS ENDED
-						//console.log("SORRY SHOW HAS ENDED");
-						break_loop = true;
-					}
-			}
+//				}
+//				// Show has started, but not ended
+//				else 
+//					if (currentTime.getMonth() == 8 && currentTime.getDate >= 5 && currentTime.getDate <= 7) {
+//					
+//						// Friday-Sunday
+//						if (currentTime.getDate == 5 || currentTime.getDay == 6 || currentTime.getDay == 0) {
+//							if ((currentTime.getHours() < hour) || (currentTime.getHours() == hour && currentTime.getMinutes <= minute)) {
+//								if (typeof(data.venue.events.event[x].bands) != "undefined") {
+//									stage_info[file_name_original] = new data_object(data.venue.events.event[x].photo_thumb, data.venue.events.event[x].title, data.venue.events.event[x].bands.band.homepage, data.venue.events.event[x].bands.band.description);
+//								}
+//								else {
+//									stage_info[file_name_original] = new data_object(data.venue.events.event[x].photo_thumb, data.venue.events.event[x].title, "#", "No information currently available");
+//								}
+//								break_loop = true;
+//							}
+//						}
+//					}
+//					
+//					// Show has ended
+//					else {
+//						// SHOW HAS ENDED
+//						//console.log("SORRY SHOW HAS ENDED");
+//						break_loop = true;
+//					}
+//			}
 			if (break_loop == true) {
 				break;
 			}
